@@ -2,7 +2,7 @@
 <a href="/dinosaurs/new"> add a dino!</a>
 
 <ul>
-    <% dinosaurs.forEach( function(dinosaur, i) { %>
-        <li> <a href="/dinosaurs/<%= i %>"><%= dinosaur.name %></a> is a <%= dinosaur.type %></li>
+    <% dinosaurs.forEach( function(dinosaur) { %>
+        <li> <a href="/dinosaurs/<%= dinosaur.id %>"><%= dinosaur.name %></a> is a <%= dinosaur.type %></li>
     <% }); %>
 </ul>

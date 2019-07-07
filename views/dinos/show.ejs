@@ -1,7 +1,7 @@
 <h2><%= dinosaur.name %></h2>
 <a href="/dinosaurs">back to dinos!</a>
 <p>This dinosaur is a good dinosaur and it is a <%= dinosaur.type %></p>
-<a href="/dinosaurs/<%= id %>/edit">EDIT THIS DINO</a>
-<form method="POST" action="/dinosaurs/<%= id %>/?_method=DELETE">
+<a href="/dinosaurs/<%= dinosaur.id %>/edit">EDIT THIS DINO</a>
+<form method="POST" action="/dinosaurs/<%= dinosaur.id %>/?_method=DELETE">
     <input type="submit" value="DELETE">
 </form>
